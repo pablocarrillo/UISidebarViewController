@@ -33,7 +33,7 @@
 
     UIViewController* menuVC = [story instantiateViewControllerWithIdentifier:@"menuVC"];
     
-    menuVC.view.frame = CGRectMake(0, 0, 250.f, 768.f);
+    menuVC.view.frame = CGRectMake(0, 0, 250.f, self.view.frame.size.height);
     
     UIViewController *navVC = [[UINavigationController alloc] initWithRootViewController:newVC];
     
