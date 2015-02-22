@@ -163,13 +163,8 @@
 
 - (void)setupCenterView
 {
-    // Create centerVC if does not exist
-    if (!self.centerVC)
-    {
-        self.centerVC = [UIViewController new];
-        self.centerVC.view.backgroundColor = [UIColor whiteColor];
-        self.centerVC.view.frame = self.view.bounds;
-    }
+    // Throw exception if sidebar view controller doesn't exist
+    NSAssert(self.centerVC && [self.centerVC isKindOfClass:[UIViewController class]], @"The center view controller can not be nil and must be a view controller");
 
     // Setup centerVC
     CGRect frame = self.centerVC.view.frame;
@@ -184,13 +179,8 @@
 
 - (void)setupSidebarView
 {
-    // Create sidebarVC if does not exist
-    if (!self.sidebarVC)
-    {
-        self.sidebarVC = [UITableViewController new];
-        self.sidebarVC.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
-        self.sidebarVC.view.frame = self.view.bounds;
-    }
+    // Throw exception if sidebar view controller doesn't exist
+    NSAssert(self.sidebarVC && [self.sidebarVC isKindOfClass:[UIViewController class]], @"The sidebar can not be nil and must be a view controller");
 
     // Setup sidebarVC
     CGRect frame = self.sidebarVC.view.frame;
