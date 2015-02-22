@@ -14,28 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UIViewController *newVC = [UIViewController new];
-    newVC.view.backgroundColor = [UIColor whiteColor];
-
-    UIViewController *navVC = [[UINavigationController alloc] initWithRootViewController:newVC];
-
-    UISidebarViewController *sidebarVC = [[UISidebarViewController alloc]
-        initWithCenterViewController:navVC
-//        initWithCenterViewController:newVC
-        andSidebarViewController:nil];
-//    sidebarVC.direction = UISidebarViewControllerDirectionRight;
-
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 8, 64, 44)];
-    [button setTitle:@"MENU" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [button addTarget:sidebarVC action:@selector(toggleSidebar:) forControlEvents:UIControlEventTouchUpInside];
-    [sidebarVC.centerVC.view addSubview:button];
-
-	self.window.rootViewController = sidebarVC;
-
-    [self.window makeKeyAndVisible];
     return YES;
 }
 							

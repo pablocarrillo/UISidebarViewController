@@ -20,6 +20,8 @@
 		223D574018D1982200CE2C7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 223D573E18D1982200CE2C7B /* InfoPlist.strings */; };
 		223D574218D1982200CE2C7B /* UISidebarViewControllerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 223D574118D1982200CE2C7B /* UISidebarViewControllerExampleTests.m */; };
 		223D574E18D1989200CE2C7B /* UISidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223D574D18D1989200CE2C7B /* UISidebarViewController.m */; };
+		6E2880541A9A8E7A003AA6D7 /* CCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2880531A9A8E7A003AA6D7 /* CCFirstViewController.m */; };
+		6E2880561A9A8F1F003AA6D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2880551A9A8F1F003AA6D7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		223D574118D1982200CE2C7B /* UISidebarViewControllerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISidebarViewControllerExampleTests.m; sourceTree = "<group>"; };
 		223D574C18D1989200CE2C7B /* UISidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISidebarViewController.h; sourceTree = "<group>"; };
 		223D574D18D1989200CE2C7B /* UISidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISidebarViewController.m; sourceTree = "<group>"; };
+		6E2880521A9A8E7A003AA6D7 /* CCFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFirstViewController.h; sourceTree = "<group>"; };
+		6E2880531A9A8E7A003AA6D7 /* CCFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFirstViewController.m; sourceTree = "<group>"; };
+		6E2880551A9A8F1F003AA6D7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +120,9 @@
 				223D572618D1982200CE2C7B /* CCAppDelegate.m */,
 				223D572E18D1982200CE2C7B /* Images.xcassets */,
 				223D571D18D1982200CE2C7B /* Supporting Files */,
+				6E2880521A9A8E7A003AA6D7 /* CCFirstViewController.h */,
+				6E2880531A9A8E7A003AA6D7 /* CCFirstViewController.m */,
+				6E2880551A9A8F1F003AA6D7 /* Main.storyboard */,
 			);
 			path = UISidebarViewControllerExample;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E2880561A9A8F1F003AA6D7 /* Main.storyboard in Resources */,
 				223D572F18D1982200CE2C7B /* Images.xcassets in Resources */,
 				223D572118D1982200CE2C7B /* InfoPlist.strings in Resources */,
 			);
@@ -258,6 +267,7 @@
 				223D572718D1982200CE2C7B /* CCAppDelegate.m in Sources */,
 				223D572318D1982200CE2C7B /* main.m in Sources */,
 				223D574E18D1989200CE2C7B /* UISidebarViewController.m in Sources */,
+				6E2880541A9A8E7A003AA6D7 /* CCFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +389,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISidebarViewControllerExample/UISidebarViewControllerExample-Prefix.pch";
 				INFOPLIST_FILE = "UISidebarViewControllerExample/UISidebarViewControllerExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,7 +404,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UISidebarViewControllerExample/UISidebarViewControllerExample-Prefix.pch";
 				INFOPLIST_FILE = "UISidebarViewControllerExample/UISidebarViewControllerExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -458,6 +472,7 @@
 				223D574718D1982200CE2C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		223D574818D1982200CE2C7B /* Build configuration list for PBXNativeTarget "UISidebarViewControllerExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +481,7 @@
 				223D574A18D1982200CE2C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
