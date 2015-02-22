@@ -19,7 +19,7 @@
     #define TIME_ANIMATION_DURATION 0.2
     #define SIZE_DEFAULT_SIDEBAR_WIDTH 270
     #define SIZE_PAN_FROM_EDGE_MARGIN 44
-    #define ALPHA_OVERLAY 0.5
+    #define ALPHA_OVERLAY 0.5f
 
 @interface UITouchPassingView : UIView
     @property (nonatomic, weak) UIView *targetView; // View to pass touches to
@@ -235,7 +235,7 @@
 
     // Update overlay color
     if (show) {
-        self.overlayView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:ALPHA_OVERLAY];
+        self.overlayView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:_overlayOpacity];
     }
 
     // Setup target frame and animations and callbacks
